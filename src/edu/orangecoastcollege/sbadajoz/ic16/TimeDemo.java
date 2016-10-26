@@ -7,19 +7,15 @@ public class TimeDemo {
     }
 
     public static void main(String [] args) {
-        Time a = new Time();
-        Time b = new Time(a);
-        Time c = new Time(5, 3);
-
-        checkEquals(a, b);
-        checkEquals(b, c);
-
-        a.setHour(14);
-        System.out.println("The hour of time " + a + "is: " + a.getHour());
-        b.setMinute(59);
-        System.out.println("The minute of time " + b + "is: " + b.getMinute());
-        c.setTime(14, 0);
-        checkEquals(a, c);
-        if(a.isAM()) System.out.println(a + " is an AM time");
+        Time now = new Time(13, 6);
+        Time copyOfNow = new Time(now);
+        Time midnight = new Time();
+        
+        System.out.println(now);
+        System.out.println(copyOfNow);
+        System.out.println(midnight);
+        
+        copyOfNow.setHour(25);
+        System.out.println(copyOfNow);
     }
 }
