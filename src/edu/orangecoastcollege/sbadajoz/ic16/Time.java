@@ -42,8 +42,7 @@ public class Time {
     }
     
     public boolean isAM() {
-        if(mHour < 12) return true;
-        return false;
+        return mHour < 12;
     }
 
     @Override
@@ -71,8 +70,7 @@ public class Time {
     @Override
     public String toString()
     {
-        if(isAM()) return "Time [" + mHour + ":" + mMinute + " AM]";
-        return "Time [" + mHour + ":" + mMinute + " PM]";
+        return "Time [" + ((mHour < 10) ? "0" : "") + mHour + ":" + ((mMinute < 10) ? "0" : "") + mMinute + ((isAM()) ? "AM" : "PM") + "]";
 
     }
     
