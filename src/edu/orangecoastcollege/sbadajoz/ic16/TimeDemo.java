@@ -1,5 +1,11 @@
 package edu.orangecoastcollege.sbadajoz.ic16;
+/*
+Badajoz, Seve
+CS A170
+October 26, 2016
 
+IC16
+*/
 public class TimeDemo {
     public static void checkEquals(Time a, Time b) {
         if(a.equals(b)) System.out.println(a + " is equal to " + b);
