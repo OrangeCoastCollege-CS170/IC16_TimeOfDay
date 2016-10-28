@@ -1,5 +1,11 @@
 package edu.orangecoastcollege.sbadajoz.ic16;
+/*
+Badajoz, Seve
+CS A170
+October 26, 2016
 
+IC16
+*/
 public class Time {
     private int mHour;
     private int mMinute;
